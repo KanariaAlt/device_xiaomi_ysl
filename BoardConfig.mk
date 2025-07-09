@@ -13,6 +13,9 @@ DEVICE_PATH := device/xiaomi/ysl
 TARGET_SCREEN_DENSITY := 280
 
 # Kernel
+TARGET_KERNEL_VERSION := 4.19
+
+# Kernel
 TARGET_KERNEL_CONFIG := vendor/mi8953-perf_defconfig
 
 # Partitions
