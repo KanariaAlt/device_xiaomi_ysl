@@ -30,5 +30,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.msm8953
 
+# Consumer IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/ysl/ysl-vendor.mk)
