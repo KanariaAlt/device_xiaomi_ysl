@@ -21,8 +21,10 @@ TARGET_BOOT_ANIMATION_RES := 720
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
 PRODUCT_NAME := lineage_ysl
+BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 5 Plus
+PRODUCT_MODEL := Redmi S2
 PRODUCT_MANUFACTURER := Xiaomi
+TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
