@@ -9,6 +9,9 @@ include device/xiaomi/mititanium-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/ysl
 
+# Kernel
+TARGET_KERNEL_CONFIG := vendor/mi8953-perf_defconfig
+
 # Partitions
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
