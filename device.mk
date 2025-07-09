@@ -7,6 +7,9 @@
 # Inherit from mititanium-common
 $(call inherit-product, device/xiaomi/mititanium-common/mititanium.mk)
 
+# Screen density
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
