@@ -46,5 +46,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Security patch level
 VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Inherit from the proprietary version
 include vendor/xiaomi/ysl/BoardConfigVendor.mk

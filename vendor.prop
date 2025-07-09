@@ -1,1 +1,12 @@
+# Audio
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio.fluence.voicecomm=false
+ro.vendor.audio.sdk.fluencetype=fluence
+vendor.audio.feature.fluence.enable=true
 
+# Camera
+persist.camera.HAL3.enabled=1
+persist.vendor.camera.dual.camera=0
+persist.vendor.camera.aux.camera=1
