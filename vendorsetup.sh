@@ -28,9 +28,9 @@ else
     echo "vendor/xiaomi/mititanium-common already exists, skipping clone"
 fi
 
-# Clone commmon proprietary if not exists
+# Clone hardware titanium_64 proprietary if not exists
 if [ ! -d "hardware/titanium_64" ]; then
-    git clone --depth=1 https://github.com/KanariaAlt/proprietary_vendor_xiaomi_mititanium-common -b 13 hardware/titanium_64
+    git clone --depth=1 https://github.com/KanariaAlt/hardware-titanium_64 -b 13 hardware/titanium_64
 else
     echo "hardware/titanium_64 already exists, skipping clone"
 fi
