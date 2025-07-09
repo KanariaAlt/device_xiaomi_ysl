@@ -7,10 +7,10 @@
 # Inherit from common mititanium-common
 include device/xiaomi/mititanium-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/vince
+DEVICE_PATH := device/xiaomi/ysl
 
 # Security patch level
 VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
 # Inherit from the proprietary version
-include vendor/xiaomi/vince/BoardConfigVendor.mk
+include vendor/xiaomi/ysl/BoardConfigVendor.mk
