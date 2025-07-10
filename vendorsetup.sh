@@ -30,7 +30,7 @@ fi
 
 # Clone kernel if not exists
 if [ ! -d "kernel/xiaomi/msm8953" ]; then
-    git clone --depth=1 https://github.com/Mi-Titanium/msm-4.19 -b ysl/master kernel/xiaomi/msm8953
+    git clone --depth=1 https://github.com/mizuenaAlt/msm-4.19 -b ysl/master kernel/xiaomi/msm8953
 else
     echo "kernel/xiaomi/msm8953 already exists, skipping clone"
 fi
