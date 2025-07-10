@@ -28,6 +28,27 @@ else
     echo "vendor/xiaomi/mititanium-common already exists, skipping clone"
 fi
 
+# Clone kernel if not exists
+if [ ! -d "kernel/xiaomi/msm8953" ]; then
+    git clone --depth=1 https://github.com/Mi-Titanium/msm-4.19 -b ysl/master kernel/xiaomi/msm8953
+else
+    echo "kernel/xiaomi/msm8953 already exists, skipping clone"
+fi
+
+# Clone kernel devicetree if not exists
+if [ ! -d "kernel/xiaomi/msm8953/arch/arm64/boot/dts/vendor/qcom/mi8953" ]; then
+    git clone --depth=1 https://github.com/mizuenaAlt/kernel_devicetree_xiaomi-msm8953 -b 4.19 kernel/xiaomi/msm8953/arch/arm64/boot/dts/vendor/qcom/mi8953
+else
+    echo "kernel/xiaomi/msm8953/arch/arm64/boot/dts/vendor/qcom/mi8953 already exists, skipping clone"
+fi
+
+# Clone kernel module if not exists
+if [ ! -d "kernel/xiaomi/msm8953/techpack/xiaomi-msm8953" ]; then
+    git clone --depth=1 https://github.com/Mi-Titanium/techpack_xiaomi-msm8953 -b main kernel/xiaomi/msm8953/techpack/xiaomi-msm8953
+else
+    echo "kernel/xiaomi/msm8953/techpack/xiaomi-msm8953 already exists, skipping clone"
+fi
+
 # Clone hardware titanium_64 proprietary if not exists
 if [ ! -d "hardware/titanium_64" ]; then
     git clone --depth=1 https://github.com/KanariaAlt/hardware-titanium_64 -b 13 hardware/titanium_64
