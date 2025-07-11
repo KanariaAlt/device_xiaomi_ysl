@@ -20,7 +20,6 @@ vendor/lib/hw/fingerprint.fpc.default.so
 vendor/lib/libgf_ca.so
 vendor/lib/libgf_hal.so
 vendor/lib/libvendor.goodix.hardware.fingerprint@1.0-service.so
-vendor/lib/libvendor.goodix.hardware.fingerprint@1.0.so
 
 # Sensors configs
 vendor/etc/sensors/sensor_def_qcomdev.conf

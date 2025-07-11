@@ -44,5 +44,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8953-32
 
+PRODUCT_PACKAGES += \
+    com.fingerprints.extension@1.0.vendor \
+    libvendor.goodix.hardware.fingerprint@1.0.vendor
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/ysl/ysl-vendor.mk)
