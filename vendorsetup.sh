@@ -1,5 +1,25 @@
 git clone --depth=1 https://gitlab.com/nekoprjkt/aosp-clang -b 17 prebuilts/clang/host/linux-x86/clang-aosp
 
+# Remove msm8953-k4.9 Audio HAL
+rm -rf hardware/qcom-caf/msm8953/audio
+
+# Remove msm8953-k4.9 Media HAL
+rm -rf hardware/qcom-caf/msm8953/media
+
+# Clone msm8953-k4.19 Audio HAL
+if [ ! -d "hardware/qcom-caf/msm8953/audio" ]; then
+    git clone https://github.com/Mi-Titanium/android_hardware_qcom_audio_mithorium -b LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0 hardware/qcom-caf/msm8953/audio
+else
+    echo "hardware/qcom-caf/msm8953/audio already exists, skipping clone"
+fi
+
+# Clone msm8953-k4.19 Media HAL
+if [ ! -d "hardware/qcom-caf/msm8953/media" ]; then
+    git clone https://github.com/Mi-Titanium/android_hardware_qcom_media_mithorium -b LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0 hardware/qcom-caf/msm8953/media
+else
+    echo "hardware/qcom-caf/msm8953/media already exists, skipping clone"
+fi
+
 # Clone common tree if not exists
 if [ ! -d "device/xiaomi/mititanium-common" ]; then
     git clone https://github.com/KanariaAlt/device_xiaomi_mititanium-common -b 14 device/xiaomi/mititanium-common
