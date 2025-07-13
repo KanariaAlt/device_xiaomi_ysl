@@ -7,6 +7,9 @@
 # Inherit from mititanium-common
 $(call inherit-product, device/xiaomi/mititanium-common/mititanium.mk)
 
+# Ignore Selinux
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
